@@ -28,7 +28,7 @@ const CustomInput: React.FC<CustomInputProps> = React.forwardRef(
             <input
               className={`${
                 className || ""
-              } outline-none  transition-all duration-200 text-sm border rounded-xl  px-4 py-3 h-[2.5rem]  md:h-[3rem] bg-[#F8FAFC]    w-full border-[#CBD5E1]  focus:ring-2 focus:ring-primary focus:ring-opacity-40 `}
+              } outline-none  transition-all duration-200 text-sm border rounded-xl  px-4 py-3 h-[2.5rem]  md:h-[3rem] bg-[#F8FAFC] w-full  border-[#CBD5E1]  focus:ring-2 focus:ring-primary focus:ring-opacity-40 `}
               type={type}
               name={name}
               {...rest}

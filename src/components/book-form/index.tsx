@@ -81,7 +81,7 @@ export const BookForm = () => {
         </p>
       </div>
       <form
-        className="flex flex-col gap-y-4"
+        className="flex flex-col gap-y-4 w-full"
         onSubmit={handleSubmit(handleBookingSubmit)}
       >
         <CustomInput
