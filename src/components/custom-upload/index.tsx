@@ -40,7 +40,9 @@ function Dropzone({
   return (
     <div className="flex flex-col gap-y-2 mb-1">
       <div className="">
-        <label className={`text-xs md:text-sm  font-semibold text-[#344054]`}>
+        <label
+          className={`text-xs md:text-sm  font-semibold md:text-[#344054] text-gray-200`}
+        >
           Means Of Identification
         </label>
       </div>
@@ -64,11 +66,13 @@ function Dropzone({
               </span>
               <div className="mt-7 flex flex-col gap-y-2.5">
                 <div className="flex items-center justify-center gap-x-1 text-sm ">
-                  <p className="text-gray-400">Drag & drop files or </p>
+                  <p className="text-gray-300 md:text-gray-400">
+                    Drag & drop files or{" "}
+                  </p>
                   <button
                     type="button"
                     onClick={open}
-                    className="border-b font-semibold text-gray-800 leading-none"
+                    className="border-b font-semibold text-gray-300 md:text-gray-800 leading-none"
                   >
                     Browse
                   </button>

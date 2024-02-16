@@ -12,7 +12,7 @@ const CustomInput: React.FC<CustomInputProps> = React.forwardRef(
       if (typeof label === "string")
         return (
           <label
-            className={` text-xs md:text-sm  font-semibold text-[#344054] `}
+            className={` text-xs md:text-sm  font-semibold md:text-[#344054] text-gray-200 `}
           >
             {label}
           </label>

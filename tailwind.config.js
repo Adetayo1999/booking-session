@@ -8,7 +8,7 @@ export default {
       },
       backgroundImage: {
         banner:
-          "linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.75)), url('./assets/book-session.jpg')",
+          "linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('./assets/book-session.jpg')",
       },
     },
   },

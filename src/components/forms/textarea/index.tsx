@@ -12,7 +12,7 @@ const CustomTextarea: React.FC<CustomTextareaProps> = React.forwardRef(
       if (typeof label === "string")
         return (
           <label
-            className={` text-sm  font-semibold text-[#344054] ${
+            className={` text-sm  font-semibold md:text-[#344054] text-gray-200 ${
               error && "text-red-500"
             }`}
           >
@@ -29,11 +29,11 @@ const CustomTextarea: React.FC<CustomTextareaProps> = React.forwardRef(
           <div className="relative">
             <textarea
               cols={30}
-              rows={5}
+              rows={3}
               {...rest}
               ref={ref as any}
               className={`
-                "outline-none  transition-all duration-200 text-base border rounded-xl  px-4 py-3  bg-[#F8FAFC] w-full ${
+                "outline-none  transition-all duration-200 text-sm outline-none border rounded-xl  px-4 py-3  bg-[#F8FAFC] w-full ${
                   error
                     ? "border-red-500"
                     : "border-[#CBD5E1]  focus:ring-2 focus:ring-primary focus:ring-opacity-40"
