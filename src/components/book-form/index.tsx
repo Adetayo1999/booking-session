@@ -11,6 +11,7 @@ import CustomTextarea from "../forms/textarea";
 interface BookingFormType {
   full_name: string;
   dob: string;
+  email: string;
   phone_number: string;
   reservation_start: string;
   reservation_end: string;
@@ -90,6 +91,11 @@ export const BookForm = () => {
           error={errors.full_name}
         />
         <CustomInput
+          label="Email"
+          {...register("email", { required: true })}
+          error={errors.email}
+        />
+        <CustomInput
           label="Date of birth"
           type="date"
           {...register("dob", { required: true })}
@@ -129,7 +135,9 @@ export const BookForm = () => {
           />
           <div className="">
             {file && (
-              <p className="text-sm text-gray-800 font-semibold">{file.name}</p>
+              <p className="text-sm  text-gray-300 md:text-gray-800 font-semibold">
+                {file.name}
+              </p>
             )}
           </div>
         </div>
